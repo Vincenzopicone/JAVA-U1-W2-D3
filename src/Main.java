@@ -21,8 +21,8 @@ public class Main {
         ArrayNumeriRandom N2 = new ArrayNumeriRandom("blocco 2");
         ArrayNumeriRandom N3 = new ArrayNumeriRandom("blocco 3");
         Thread T3 = new Thread(N1);
-        Thread T4 = new Thread(N1);
-        Thread T5 = new Thread(N1);
+        Thread T4 = new Thread(N2);
+        Thread T5 = new Thread(N3);
         try {
             T3.start();
             T3.join();
