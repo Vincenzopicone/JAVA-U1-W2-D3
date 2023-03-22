@@ -9,8 +9,8 @@ public class ArrayNumeriRandom implements Runnable {
         long somma = 0;
         for(int i = 0; i < 1000; i++ ) {
             int number = random.nextInt(10);
-            somma = somma + number;
             listaNumeri.add(number);
+            somma = somma + number;
         }
         Main.parziali = Main.parziali + somma;
         System.out.println("Del " + blocco + " la somma parziale è: " + somma);
